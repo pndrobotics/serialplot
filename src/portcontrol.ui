@@ -314,8 +314,21 @@
        <property name="spacing">
         <number>2</number>
        </property>
-       <item row="1" column="2">
-        <widget class="LedWidget" name="ledRTS" native="true">
+       <item row="2" column="1">
+        <widget class="QLabel" name="labDCD">
+         <property name="toolTip">
+          <string>Data Carrier Detect</string>
+         </property>
+         <property name="text">
+          <string>DCD</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="LedWidget" name="ledCTS" native="true">
          <property name="minimumSize">
           <size>
            <width>15</width>
@@ -329,22 +342,9 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Request To Send</string>
+          <string>Clear To Send</string>
          </property>
         </widget>
-       </item>
-       <item row="0" column="0">
-        <spacer name="horizontalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
        </item>
        <item row="0" column="1">
         <widget class="QPushButton" name="pbDTR">
@@ -359,6 +359,38 @@
          </property>
          <property name="text">
           <string>DTR</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="labCTS">
+         <property name="toolTip">
+          <string>Clear To Send</string>
+         </property>
+         <property name="text">
+          <string>CTS</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="LedWidget" name="ledRI" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Ring Indicator</string>
          </property>
         </widget>
        </item>
@@ -400,19 +432,6 @@
          </property>
         </widget>
        </item>
-       <item row="3" column="1">
-        <widget class="QLabel" name="labDSR">
-         <property name="toolTip">
-          <string>Data Set Ready</string>
-         </property>
-         <property name="text">
-          <string>DSR</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
        <item row="1" column="1">
         <widget class="QPushButton" name="pbRTS">
          <property name="maximumSize">
@@ -429,16 +448,35 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="1">
-        <widget class="QLabel" name="labDCD">
+       <item row="3" column="1">
+        <widget class="QLabel" name="labDSR">
          <property name="toolTip">
-          <string>Data Carrier Detect</string>
+          <string>Data Set Ready</string>
          </property>
          <property name="text">
-          <string>DCD</string>
+          <string>DSR</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="LedWidget" name="ledRTS" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Request To Send</string>
          </property>
         </widget>
        </item>
@@ -474,56 +512,18 @@
          </property>
         </widget>
        </item>
-       <item row="4" column="2">
-        <widget class="LedWidget" name="ledRI" native="true">
-         <property name="minimumSize">
+       <item row="0" column="0">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
           <size>
-           <width>15</width>
-           <height>15</height>
+           <width>40</width>
+           <height>20</height>
           </size>
          </property>
-         <property name="maximumSize">
-          <size>
-           <width>15</width>
-           <height>15</height>
-          </size>
-         </property>
-         <property name="toolTip">
-          <string>Ring Indicator</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="2">
-        <widget class="LedWidget" name="ledCTS" native="true">
-         <property name="minimumSize">
-          <size>
-           <width>15</width>
-           <height>15</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>15</width>
-           <height>15</height>
-          </size>
-         </property>
-         <property name="toolTip">
-          <string>Clear To Send</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="1">
-        <widget class="QLabel" name="labCTS">
-         <property name="toolTip">
-          <string>Clear To Send</string>
-         </property>
-         <property name="text">
-          <string>CTS</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
+        </spacer>
        </item>
       </layout>
      </item>

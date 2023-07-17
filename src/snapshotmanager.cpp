@@ -43,7 +43,7 @@ SnapshotManager::SnapshotManager(MainWindow* mainWindow,
 
     _takeSnapshotAction.setToolTip("Take a snapshot of current plot");
     _takeSnapshotAction.setShortcut(QKeySequence("Ctrl+P"));
-    _takeSnapshotAction.setIcon(QIcon::fromTheme("camera"));
+    _takeSnapshotAction.setIcon(QIcon(":/icons/tango/32x32/actions/camera.png"));
     loadSnapshotAction.setToolTip("Load snapshots from CSV files");
     clearAction.setToolTip("Delete all snapshots");
     connect(&_takeSnapshotAction, SIGNAL(triggered(bool)),

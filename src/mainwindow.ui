@@ -101,7 +101,7 @@
      <x>0</x>
      <y>0</y>
      <width>653</width>
-     <height>22</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuHelp">
@@ -159,8 +159,8 @@
     <bool>false</bool>
    </property>
    <property name="icon">
-    <iconset theme="player_pause">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset resource="../misc/winicons.qrc">
+     <normaloff>:/icons/tango/32x32/actions/player_pause.png</normaloff>:/icons/tango/32x32/actions/player_pause.png</iconset>
    </property>
    <property name="text">
     <string>Pause</string>
@@ -174,8 +174,8 @@
   </action>
   <action name="actionClear">
    <property name="icon">
-    <iconset theme="edit-clear">
-     <normaloff>.</normaloff>.</iconset>
+    <iconset resource="../misc/winicons.qrc">
+     <normaloff>:/icons/tango/32x32/actions/edit-clear.png</normaloff>:/icons/tango/32x32/actions/edit-clear.png</iconset>
    </property>
    <property name="text">
     <string>Clear</string>
@@ -287,6 +287,8 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../misc/winicons.qrc"/>
+ </resources>
  <connections/>
 </ui>

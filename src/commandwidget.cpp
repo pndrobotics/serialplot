@@ -31,6 +31,8 @@ CommandWidget::CommandWidget(QWidget *parent) :
     _sendAction(this)
 {
     ui->setupUi(this);
+    ui->pbASCII->setFixedWidth(ui->pbASCII->sizeHint().width());
+    ui->pbHEX->setFixedWidth(ui->pbHEX->sizeHint().width());
 
     connect(ui->pbDelete, &QPushButton::clicked, this, &CommandWidget::onDeleteClicked);
     connect(ui->pbSend, &QPushButton::clicked, this, &CommandWidget::onSendClicked);

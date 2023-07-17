@@ -48,6 +48,9 @@ PortControl::PortControl(QSerialPort* port, QWidget* parent) :
 {
     ui->setupUi(this);
 
+    ui->pbDTR->setFixedWidth(ui->pbDTR->sizeHint().width());
+    ui->pbRTS->setFixedWidth(ui->pbRTS->sizeHint().width());
+
     serialPort = port;
     connect(serialPort, SIGNAL(error(QSerialPort::SerialPortError)),
             this, SLOT(onPortError(QSerialPort::SerialPortError)));

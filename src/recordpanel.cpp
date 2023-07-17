@@ -38,7 +38,7 @@ RecordPanel::RecordPanel(Stream* stream, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::RecordPanel),
     recordToolBar(tr("Record Toolbar")),
-    recordAction(QIcon::fromTheme("media-record"), tr("Record"), this),
+    recordAction(QIcon(":/icons/tango/32x32/actions/media-record.png"), tr("Record"), this),
     recorder(this)
 {
     overwriteSelected = false;

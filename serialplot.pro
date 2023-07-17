@@ -192,6 +192,5 @@ CONFIG += c++11
 
 RESOURCES += misc/icons.qrc
 
-win32 {
-    RESOURCES += misc/winicons.qrc
-}
+RESOURCES += misc/winicons.qrc
+

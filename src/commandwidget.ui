@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>433</width>
-    <height>34</height>
+    <height>44</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -38,9 +38,8 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset theme="list-remove">
-       <normaloff/>
-      </iconset>
+      <iconset resource="../misc/winicons.qrc">
+       <normaloff>:/icons/tango/32x32/actions/list-remove.png</normaloff>:/icons/tango/32x32/actions/list-remove.png</iconset>
      </property>
      <property name="autoRaise">
       <bool>true</bool>
@@ -188,6 +187,8 @@
    <header>sneakylineedit.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../misc/winicons.qrc"/>
+ </resources>
  <connections/>
 </ui>
